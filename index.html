@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external stylesheet for styling the page -->
+</head>
+<body>
+    <div class="container">
+        <!-- Create a container for the form -->
+        
+        <div>
+            <img src="logo original.png" alt="BookMyShow logo">
+            <h1>Customer Survey Form</h1>
+            <!-- Display the main heading of the survey form -->
+        </div>
+        
+        <p>Thank you for using BookMyShow! We value your feedback and would like to improve our services. Please take a moment to fill out this survey.</p>
+        
+        <form action="#" method="POST">
+            <!-- Create a form with the POST method -->
+            
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <!-- Label for the first name input field -->
+                <input type="text" id="first-name" name="first-name" required>
+                <!-- Text input for the user's first name (required) -->
+            </div>
+            
+            <!-- Repeat the above structure for last name, age, and email fields -->
+            
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="promo"> How often do you use BookMyShow?</label>
+                <!-- Label for a set of radio buttons -->
+            </div>
+            
+            
+            <!-- Similar structure for the next questions -->
+            
+            <div><input name="promo" class="promo1" type="radio">Regularly (Once a week or more)</div>
+            <div><input name="promo" class="promo1" type="radio">Occasionally (Once a month)</div>
+            <div><input type="radio" name="promo" class="promo1">Rarely (A few times a year)</div>
+            <div><input type="radio" name="promo" class="promo1">First-time user</div>
+            
+            <br>
+            
+            <div>
+                <label for="product">Which platform do you primarily use for booking tickets?</label>
+                <!-- Label for a set of checkboxes -->
+            </div>
+            
+            <!-- Checkboxes for selecting booking platforms -->
+            
+            <div><input name="ps" type="checkbox">Website</div>
+            <div><input name="ps" type="checkbox">Mobile App (iOS or Android)</div>
+            
+            <!-- Add more questions tailored to your needs here -->
+            
+            <div class="form-group">
+                <label for="comments">Any suggestions (if any):</label>
+                <!-- Label for a textarea input -->
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter here.."></textarea>
+                <!-- Textarea for user comments and suggestions -->
+            </div>
+            
+            <button type="submit">Submit</button>
+            <!-- Submit button to send the survey form -->
+        </form>
+    </div>
+</body>
+</html>
